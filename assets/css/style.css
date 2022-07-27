@@ -1,5 +1,6 @@
 * {
     font-family: Montserrat;
+    box-sizing: border-box;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
 }
 
 .header h1 {
-    display: inline-block;
     font-size: 48px;
 }
 
@@ -28,8 +28,7 @@ body {
 }
 
 nav {
-    background-color: #848484;
-    display: flex;
+    float: right;
     justify-content: flex-end;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
@@ -42,4 +41,16 @@ nav a {
     margin-right: 5px;
     text-decoration: none;
     color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+h2 {
+    margin: 0;
+    background-color:#848484;
+    padding: 80px;
 }
